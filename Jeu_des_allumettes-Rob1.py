@@ -4,7 +4,7 @@ from tkinter import *
 fen = Tk()
 fen.title("Jeu des allumettes")
 fen.geometry("1080x680")
-fen.configure(bg="mistyrose")
+fen.configure(bg="darkslategray")
 
 #Variables
 a=25
@@ -54,23 +54,23 @@ def trois():
         nbmjoueurs.configure(text="Bien joué au joueur " +str(nbmj)+" qui a gagné !")
 
 #Widgets
-nbmjoueurs=Label(fen,text="C'est au joueur 1 de commencer !",width=35,height=3,bd=3,relief="ridge",bg="darkslateblue")
+nbmjoueurs=Label(fen,text="C'est au joueur 1 de commencer !",width=35,height=3,bd=3,relief="ridge",bg="whitesmoke")
 nbmjoueurs.place_configure(x=405,y=25)
 nbmjoueurs.place
 
-boutun=Button(fen,text="Enlever 1 allumette",width=20,height=3,command=un,bd=6,relief="ridge",bg="darkslateblue")
+boutun=Button(fen,text="Enlever 1 allumette",width=20,height=3,command=un,bd=6,relief="ridge",bg="whitesmoke")
 boutun.place_configure(x=100,y=125)
 boutun.place()
 
-boutdeux=Button(fen,text="Enlever 2 allumettes",width=20,height=3,command=deux,bd=6,relief="ridge",bg="darkslateblue")
+boutdeux=Button(fen,text="Enlever 2 allumettes",width=20,height=3,command=deux,bd=6,relief="ridge",bg="whitesmoke")
 boutdeux.place_configure(x=450,y=125)
 boutdeux.place()
 
-bouttrois=Button(fen,text="Enlever 3 allumettes",width=20,height=3,command=trois,bd=6,relief="ridge",bg="darkslateblue")
+bouttrois=Button(fen,text="Enlever 3 allumettes",width=20,height=3,command=trois,bd=6,relief="ridge",bg="whitesmoke")
 bouttrois.place_configure(x=800,y=125)
 bouttrois.place()
 
-allumette=Label(fen,text=a,width=75,height=20,bg="darkslateblue",bd=8,relief="ridge")
+allumette=Label(fen,text=a,width=75,height=20,bg="whitesmoke",bd=8,relief="ridge")
 allumette.place_configure(x=270,y=250)
 allumette.place()
 
